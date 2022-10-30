@@ -1,0 +1,23 @@
+{
+  "name": "code-play",
+  "version": "0.0.0",
+  "description": "Random code experiments, challenges, and exercises to maintain sharpness",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipluther/code-play.git"
+  },
+  "keywords": [],
+  "author": "Phillip Luther <dev@phillipluther.com> (https://phillipluther.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phillipluther/code-play/issues"
+  },
+  "homepage": "https://github.com/phillipluther/code-play#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}

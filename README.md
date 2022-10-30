@@ -1,2 +1,3 @@
 # code-play
-Random experiments and exercises to keep shaarp
+
+Random code experiments, challenges, and exercises to maintain sharpness
