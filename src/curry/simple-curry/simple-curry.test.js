@@ -3,8 +3,11 @@
  * Jest. source at: https://github.com/ramda/ramda/blob/master/test/curry.js
  *
  * thanks, Ramda! used under the library's MIT license
+ *
+ * removed a few tests, too … goal is parity with lodash/curry
  */
-const curry = require('./curry.js');
+const curry = require('./simple-curry.js');
+// const curry = require('lodash/curry');
 
 describe('curry', function () {
   test('curries a single value', function () {
@@ -26,36 +29,6 @@ describe('curry', function () {
 
     const part2 = curried(12, 3, 6);
     expect(part2(2)).toEqual(15);
-  });
-
-  test('allows further currying of a curried function', function () {
-    const curried = curry(function (a, b, c, d) {
-      return (a + b * c) / d;
-    });
-
-    // f(12, 3, 6, 2) == 15
-    const part1 = curried(12);
-    expect(part1(3, 6, 2)).toEqual(15);
-
-    const part2 = part1(3);
-    expect(part2(6, 2)).toEqual(15);
-    expect(part2(3, 6)(2)).toEqual(15);
-  });
-
-  test('properly reports the length of the curried function', function () {
-    const curried = curry(function (a, b, c, d) {
-      return (a + b * c) / d;
-    });
-
-    expect(curried.length).toEqual(4);
-
-    const part1 = curried(12);
-    expect(part1.length).toEqual(3);
-
-    const part2 = part1(3);
-    expect(part2.length).toEqual(2);
-
-    expect(part2(3, 6).length).toEqual(1);
   });
 
   test('preserves context', function () {
