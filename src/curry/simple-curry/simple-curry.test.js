@@ -7,7 +7,6 @@
  * removed a few tests, too … goal is parity with lodash/curry
  */
 const curry = require('./simple-curry.js');
-// const curry = require('lodash/curry');
 
 describe('curry', function () {
   test('curries a single value', function () {
