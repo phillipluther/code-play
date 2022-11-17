@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/phillipluther/code-play#readme",
   "devDependencies": {
+    "@phillipluther/eslint-config-pluther": "^0.1.1",
     "eslint": "^8.27.0",
-    "jest": "^29.2.2",
-    "pluther-bootstraps": "github:phillipluther/pluther-bootstraps"
+    "jest": "^29.2.2"
   }
 }
