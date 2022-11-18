@@ -1,3 +1,3 @@
 module.exports = {
-  extends: 'pluther',
+  extends: '@phillipluther/eslint-config-pluther',
 };
